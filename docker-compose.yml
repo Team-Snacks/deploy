@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  backend:
+    image: backend
+    container_name: backend
+    build: ./backend/
+    ports:
+      - 8080:8080
+    networks:
+      - snacks-network
+  frontend:
+    image: frontend
+    container_name: frontend
+    build: ./frontend/
+    ports:
+      - 5173:5173
+    networks:
+      - snacks-network
+    
+
+networks:
+  snacks-network:
