@@ -1,0 +1,8 @@
+[submodule "프론트엔드"]
+	path = frontend
+	url = https://github.com/Team-Snacks/frontend
+	branch = main
+[submodule "백엔드"]
+        path = backend
+        url = https://github.com/Team-Snacks/backend
+	branch = main
